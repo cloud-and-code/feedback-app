@@ -1,0 +1,39 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    {
+      "id": 2,
+      "rating": 9,
+      "text": "This is awesome stuff."
+    },
+    {
+      "id": 3,
+      "rating": 8,
+      "text": "Hello large programming world!"
+    },
+    {
+      "id": 4,
+      "rating": 7,
+      "text": "Sed diam voluptua."
+    },
+    {
+      "id": 5,
+      "rating": 1,
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+    },
+    {
+      "text": "UPDATED - new feedback from postman",
+      "rating": 1,
+      "id": 6
+    },
+    {
+      "text": "this was added from the form",
+      "rating": 5,
+      "id": 7
+    }
+  ]
+}
