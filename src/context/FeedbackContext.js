@@ -5,7 +5,23 @@ const FeedbackContext = createContext()
 // use children as props because the provider will be wrapped around other components
 export const FeedbackProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
-  const [feedback, setFeedback] = useState([])
+  const [feedback, setFeedback] = useState([
+    {
+      id: 1,
+      rating: 10,
+      text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    },
+    {
+      id: 2,
+      rating: 9,
+      text: 'This is awesome stuff.',
+    },
+    {
+      id: 3,
+      rating: 8,
+      text: 'Hello large programming world!',
+    },
+  ])
   const [feedbackEdit, setFeedbackEdit] = useState({
     item: {},
     edit: false,
@@ -15,12 +31,12 @@ export const FeedbackProvider = ({ children }) => {
     fetchFeedback()
   }, [])
 
-  // fetch data from db.json mock backend
+  // fetch data from db.json
   const fetchFeedback = async () => {
-    const res = await fetch('/feedback?_sort=id&_order=desc')
-    const data = await res.json()
+    //const res = await fetch('/feedback?_sort=id&_order=desc')
+    //const data = await res.json()
 
-    setFeedback(data)
+    //setFeedback(data)
     setIsLoading(false)
   }
 
