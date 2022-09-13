@@ -11,17 +11,6 @@ function FeedbackList({ handleDelete }) {
   if (!isLoading && (!feedback || feedback.length === 0)) {
     return <p>There is no feedback yet!</p>
   }
-  /* return (
-    <div className='feedback-list'>
-      {feedback.map(item => (
-        <FeedbackItem
-          key={item.id}
-          item={item}
-          handleDelete={handleDelete}
-        />
-      ))}
-    </div>
-  ) */
 
   return isLoading ? (
     <Spinner />

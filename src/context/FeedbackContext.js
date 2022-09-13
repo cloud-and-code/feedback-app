@@ -44,7 +44,6 @@ export const FeedbackProvider = ({ children }) => {
   // delete feedback
   const deleteFeedback = async id => {
     if (window.confirm('Are you sure you want to delete?')) {
-      // talk to the backend
       await fetch(`/feedback/${id}`, {
         method: 'DELETE',
       })
@@ -54,7 +53,6 @@ export const FeedbackProvider = ({ children }) => {
   }
 
   const updateFeedback = async (id, updItem) => {
-    // talk to the backend
     const response = await fetch(`/feedback/${id}`, {
       method: 'PUT',
       headers: {
